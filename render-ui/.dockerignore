@@ -1,0 +1,24 @@
+# Compiled binary addons
+dist
+
+# Dependency directory
+node_modules
+
+# Git ignore
+.gitignore
+.git
+README.md
+
+# Mac config
+**/.DS_Store
+
+# Dockerfile
+Dockerfile
+.dockerignore
+
+# Temp and testing folder
+
+# Visual studio code
+.vscode
+
+# Non-used config file

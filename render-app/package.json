@@ -1,0 +1,53 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "description": "service",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack -c webpack.config.js --hide-modules",
+    "start": "node dist/index.bundle.js",
+    "dev": "nodemon --inspect=0.0.0.0:9229 --exec babel-node src/index.js",
+    "lint": "eslint --ignore-path .gitignore ."
+  },
+  "author": "ocean",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "@hapi/joi": "^17.1.1",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^7.0.0",
+    "dotenv": "^8.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsdoc": "^22.2.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "fs-extra": "^9.0.1",
+    "husky": "^4.2.5",
+    "kcors": "^2.2.2",
+    "koa-bodyparser": "^4.3.0",
+    "node-loader": "^0.6.0",
+    "nodemon": "^2.0.4",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "uuid": "^7.0.3",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^1.7.2",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "adm-zip": "^0.4.16",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-router": "^8.0.8",
+    "koa-swagger-decorator": "^1.6.8"
+  }
+}

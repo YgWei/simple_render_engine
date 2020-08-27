@@ -1,0 +1,20 @@
+{
+  "pt": {
+    "name": "belstar with extension",
+    "value": "pt",
+    "url": "http://render-puppeteer:8080/api/v1/render/webpage",
+    "paged": true
+  },
+  "pt2": {
+    "name": "belstar without extension",
+    "value": "pt2",
+    "url": "http://render-puppeteer:8080/api/v1/render/webpage",
+    "paged": false
+  },
+  "prince": {
+    "name": "princeXML",
+    "value": "prince",
+    "url": "http://render-prince:8080/api/v1/render/webpage",
+    "paged": false
+  }
+}
